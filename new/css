@@ -1,0 +1,77 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{
+ margin:0;
+ padding:0;
+ box-sizing:border-box;
+ font-family:Verdana, Geneva, sans-serif;
+}
+body{
+  font-size:100%;
+	}
+h1{
+  margin: 40px auto;
+  text-align: center;
+
+	}
+section{
+	width:31.333%;
+	margin:auto 1%;
+	float:left;
+	background-color:#666;
+	border:1px solid black;
+
+	}
+section > h2{
+  font-size:75%;
+  text-align:center;
+  width:25%;
+  border:1px solid black;
+  line-height: 250%;
+  float:right;
+	}
+header section:nth-child(2) > h2{
+	background-color: #F69;
+	}
+	
+header section:nth-child(3) > h2{
+	background-color: #C00;
+	}
+	
+header section:nth-child(4) > h2{
+	background-color: #F9F;
+	}
+section > p{
+	clear:both;
+	font-size:25%;
+	padding:2.5%;
+	 }
+	
+
+@media (min-width:992px){
+
+	}
+@media (min-width:768px) and (max-width:991px){
+	header section:nth-child(2){
+		width:45%;
+		margin:2.5%;
+		}
+	header section:nth-child(3){
+		width:45%;
+		margin:2.5%;
+		}
+	header section:nth-child(4){
+		width:95%;
+	    margin:auto 2.5%;
+		}
+	header section:nth-child(4) > h2{
+        width:12%;
+	}
+	}
+@media (max-width:767px){
+	header section{
+	    width:80%;
+	    margin:2.5% 10%; 
+		}
+	}
